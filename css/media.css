@@ -1,0 +1,262 @@
+@media screen and (max-width: 1230px) {
+    /* Container 
+    ==============================*/
+    .container {
+        max-width: 960px;
+    }
+
+    /* Intro 
+    ==============================*/
+    .intro__inner {
+        max-width: 740px;
+    }
+    .intro__title {
+        font-size: 55px;
+    }
+    .intro__sub-title {
+        font-size: 18px;
+    }
+
+    /* Portfolio 
+    ==============================*/
+    .portfolio__item {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 992px) {
+    /* Container 
+    ==============================*/
+    .container {
+        max-width: 720px;
+    }
+
+    /* Header NAV
+    ==============================*/
+    .header__nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        flex-direction: column;
+        width: 100%;
+
+        text-align: right;
+
+        background-color: #4e5167;
+    }
+    .nav__link {
+        padding: 9px 15px;
+        margin-right: 60px;
+    }
+
+    .nav_active {
+        display: flex;
+    }
+
+    /* Burger 
+    ==============================*/
+    .header__burger {
+        display: block;
+    }
+
+    /* Intro 
+    ==============================*/
+    .intro__inner {
+        max-width: 540px;
+    }
+    .intro__title {
+        font-size: 35px;
+    }
+    .intro__sub-title {
+        font-size: 16px;
+    }
+
+    /* Features 
+    ==============================*/
+    .features__item {
+        width: 50%;
+    }
+
+    /* Portfolio 
+    ==============================*/
+    .portfolio__item {
+        width: 50%;
+    }
+
+    /* Team 
+    ==============================*/
+    .team__item {
+        width: 50%;
+        
+        text-align: center;
+    }
+    .team__social {
+        justify-content: center;
+    }
+
+    /* Clients 
+    ==============================*/
+    .clients__text {
+        font-size: 28px;
+    }
+    .clients__autor {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    /* BTN 
+    ==============================*/
+    .btn {
+        font-size: 12px;
+    }
+
+    /* Intro 
+    ==============================*/
+    .intro {
+        height: auto;
+        padding: 150px 0 50px;
+    }
+    .intro__inner {
+        max-width: 380px;
+    }
+    .intro__sub-title {
+        font-size: 14px;
+    }
+
+    /* Features 
+    ==============================*/
+    .features__item {
+        width: 100%;
+    }
+    .features__item:nth-last-child(n+2) {
+        margin-bottom: 60px;
+    }
+
+    /* Clients 
+    ==============================*/
+    .clients__item {
+        padding: 15px 0 0;
+    }
+    .clients__photo,
+    .clients__content {
+        width: 100%;
+    }
+    .clients__photo {
+        overflow: hidden;
+    }
+    .clients__content {
+        padding: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .clients__text {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    /* Slick JS 
+    ==============================*/
+    .slick-dots {
+        margin: 0 auto;
+        
+        position: static;
+    }
+    /* Download 
+    ==============================*/
+    .download__title {
+        font-size: 22px;
+    }
+    .download__sub-title {
+        font-size: 12px;
+    }
+
+    /* Footer 
+    ==============================*/
+    .footer__block {
+        width: 100%;
+
+        padding: 0 100px;
+    }
+    .footer__block:nth-last-child(n+2) {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+
+    /* Intro 
+    ==============================*/
+    .intro__title {
+        font-size: 32px;
+    }
+
+    /* Container 
+    ==============================*/
+    .container {
+        max-width: 80%;
+    }
+
+    /* Features 
+    ==============================*/
+    .features {
+        padding: 70px 0;
+    }
+    .features__item {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Portfolio 
+    ==============================*/
+    .portfolio__item {
+        width: 100%;
+    }
+
+    /* Team 
+    ==============================*/
+    .team__item {
+        width: 100%;
+    }
+    .team__img {
+        margin: 0 auto 25px;
+    }
+
+    /* Clients 
+    ==============================*/
+    .clients__content {
+        padding: 15px 0 0;
+        margin: 0 15px;
+    }
+    .clients__item {
+        padding: 15px 0 0;
+    }
+    .clients__img {
+        right: -130px;
+    }
+    .clients__text {
+        font-size: 20px;
+    }
+    .clients__autor {
+        font-size: 10px;
+    }
+
+    /* Download
+    ==============================*/
+    .download__title {
+        font-size: 19px;
+    }
+    .download__sub-title {
+        font-size: 9px;
+    }
+    .btn_md {
+        padding: 15px 50px;
+    }
+
+        /* Footer
+    ==============================*/
+    .footer__block {
+        padding: 0px;
+    }
+}

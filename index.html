@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A description of the page" />
+    <meta name="Keywords" content="..."/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>ActiveBox</title>
+</head>
+<body>
+
+    <!-- SVG icons -->
+    <svg style="display: none;" >
+        <symbol id="facebook" viewBox="0 0 430.113 430.114">
+            <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+            c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+            c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+        </symbol>  
+        <symbol id="linkedIn" viewBox="0 0 430.117 430.117">
+            <path  d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+            c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+            v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+            C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+            c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+                M5.477,420.56h92.184v-277.32H5.477V420.56z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 430.117 430.117">
+            <path  d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
+            c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
+            c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
+            c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
+            C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
+            c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
+            c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
+            c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
+            c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
+            C414.973,206.142,393.023,203.486,381.384,198.639z"/>
+        </symbol>
+    </svg>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/ActiveBox-logo.png" alt="active-box-logo" class="logo">
+                </div>
+                <nav class="header__nav" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#features">Features</a>
+                    <a href="#" class="nav__link" data-scroll="#works">Works</a>
+                    <a href="#" class="nav__link" data-scroll="#team">Our Team</a>
+                    <a href="#" class="nav__link" data-scroll="#clients">Testimonials</a>
+                    <a href="#" class="nav__link" data-scroll="#download">Download</a>
+                </nav>
+                <button class="burger header__burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Your Favorite One Page
+                        Multi Purpose Template</h1>
+                <h2 class="intro__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                        vel scelerisque nisl consectetur et.</h2>
+                <a href="#" class="btn btn_sm intro__btn">Find Out More</a>
+            </div>
+        </div>
+    </div><!-- /.intro -->
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features__inner">
+                <!-- Easily Customised -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="60px" height="60px">
+                    <image  x="0px" y="0px" width="60px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACo1BMVEXoRUX////oRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUX////opyjKAAAA33RSTlMAAB+R8/m8PgNj391iAhjC9uzkP3T+62wBw+leNcbiKXKSMKD9bRvmPSfLHnMKo24c5TrMIXGTCKQdPO3HC5UGbztZCZelGsjoB3CQyjjv6nipIKb7anyNDY6t+HuHDJl6uw6r9V1+hboUEuPwf4QF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" />
+                    </svg>
+                    <h6 class="features__title">Easily Customised</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+                <!-- Easily Customised -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="73px" height="60px">
+                        <image  x="0px" y="0px" width="73px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAA8CAMAAAAdQmecAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAz1BMVEXoRUX////oRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUX///8xFeSFAAAAQ3RSTlMAACjD+Pzx3fvzSPTbJWAgemppvoBiX2F8zp9lFkH9+fcND2P2sPIZq+1weUBQd0yuZLdOla0OtY6XV4tKTYmK6eh4zOcnzAAAAAFiS0dEAf8CLd4AAAAHdElNRQfjBgsOIzcIz05JAAABHklEQVRYw+3X2U7DMBAF0ElTN6WEQlJKl4SErele9rWsvf//T0iIByPFuM740fd1rCNrpJFmqObXBT91v0Y+GgE/DfjU3GkRJ95PWrtNEiEL+pW8QJAIrEp7bU72JekAnESSFKNzWDUddCXpCHHlPsXoSVIP/cpS30lOcpKTnOQkJzlJIdnaVboYDKtm8Gd/Slg7XSJJ6TEnqe3dN7MkZZSftE/ZOTu/yGkEaM+bQnckZcCIxpNQd95MMdU9CSfjbVoRIdL2yfO2kWaYWZLmmFuSFsOFJenf6KWl4uBZmkoroRhXsTKTLoGrsqPw+ga4NZLucP9QWkgf8WQkPeNFUUmwNpLWeFVU3vBuJH3gUzFhX4Z/2hS5YuzzYlMufQNtNICTFPsu0AAAAABJRU5ErkJggg==" />
+                    </svg>
+                    <h6 class="features__title">Responsive Ready</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+                <!-- Modern Design  -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="41px" height="60px">
+                        <image  x="0px" y="0px" width="41px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAA8CAMAAADMpWPsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEXoRUX////oRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUX///87op91AAAAxHRSTlMAAAEROIG33vrpu0QUAwIob9f+8ujq5XsnHffiuYJOJSzh/YAiSNPNfiZ0yORVBwl/3XUGa9CaDQumLhatEK+G+LUKjXJepU9tGeCunPMpBYkVEpkw9fRjXPkvhb4Ev5sT4/xxZkHb2k2Ki8Tx+yvn5iAj7+06aZ5S0V1XTB+hqu5DRQ6pwsE1cJ9nDKtkZaxUvRzwLRc5G9/Hkz8qd+zSHjHFzGw+z7NHCGE0sMshzlqWS26X2YNitn12oEDrvI7DMpIPmpXVmgAAAAFiS0dEAf8CLd4AAAAHdElNRQfjBgsOJRD7n1ykAAADS0lEQVRIx43V6V8SQRgH8AHNwMQDAY0UjDyiFE1CSfEiy6MU8aDUTEUrOzyy1OzyTi3zzMoyu2+7s/vu94e1i5qgu8s+b3Z29vuZ2dmdeR5CnELo4bnKa7WIDrH3qjU+EqpPsBhOztfPPwCQBsrkcrksUAoogoIlTHJtkBJYFxKqUoeFhalVoSHrNVBuCF8pIyKBqI3BTnNoN23WIDpG5ypj44At8XqyLLYagIREZ2ncBnglkZWRTD0wpSxJfSqQRpgjPh0Z5kUp3A5RJgskgh1K7JQsyCwglLBKQbYGmfMyJxe7dBxSsBt5+bS0FCDXSrhkoQFFOkoWl9j2EE4p2GsrLRMQSzn2VbiRlv2ojCVV1fYa4kYKapUlyeQADlrdyqpDqCOHYSJupcCEI+SoPZ6HjLcfJYpjETxkxDEF0ci0PKRWpiH14gYeMl9cT+obw3lKe9NxnhIyNQ/Z3KghJ0628JAtJ0uJQdTKQ7aKAkgb2njINlSSUzBY3Ep9O06TnEDlGbfybKD0HNGf594iDtmBXbGErJF21rmRXWJpN3U6enrRp+OUugvo7aHPZr8N23255BHY+ufP+wDgzyFrSzGwkBmMg5BeZJUXpRg0LualS0PAZRZ5GRi6tJTrzBQdZoTDFDQ750/zCKSjDHBUgxGza042ZkC+MoEmyTFmXJ69re0wmJdBswGR4ysrQtIEsiUuUJKNiStMVabcrvBwkR4KezljPdI2YZK+Xt03VqAqpBqFaNIyymvX4chQMQAmDk7dGL2J3HFGeXw9ph2fof9WhojSthnctjDKO9G4G2sROnBy8daOxvrOTJa6eQ+i+20PipONDl2R6KeWMEvy8JE4nZpV9DjuSbP16f+9xCCJpKF2cPP1CUrDkPDseXgKq3TEWlXo7Itoqmij0zTJJl8mTc43hJ7DRd4BSnEwm3yV15f22vPawl1z1lnW2UPoNxRNvamJUAsX+5il9e2792MlNJ8b+rCjzMgu6Ui5+jHoUyOto8c+c6+d1mGqL1/nKMwqfYtmv3QVzrf14S1Z31hlBTXM98gfP/dOL/UxS2F32i/6f5ZUG0zZv/Uckir2Veda3qWKKV06E5XIvXZqZKPP9Os/U0rZXxf5D2kj+tlBE+/MAAAAAElFTkSuQmCC" />
+                    </svg>
+                    <h6 class="features__title">Responsive Ready</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+                <!-- Clean Code  -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="56px" height="60px">
+                        <image  x="0px" y="0px" width="56px" height="60px"  xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    <h6 class="features__title">Clean Code</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+                <!-- Ready to Ship  -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="72px" height="60px">
+                        <image  x="0px" y="0px" width="72px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAA8CAMAAADygAyiAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACB1BMVEXoRUX////oRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUXoRUX///+qoEkSAAAAq3RSTlMAAAE02f3+Fd3t4h0548HFxB/QClxBEHXesvX2ohQFo/dEOzozPGpu1Ok16D/I4GRY4SPD9KsZqfKV+fGNMQMXie8CQ8z4rEYNBAuo+81W5X8nCQYTKXfT89hysPzXjCESDx58zr1bDIa/s0osGig9y5Qv7KpaNi4gCEJQnr7q1rlJTIStxvrnx8KukIuavNq1PoG37rqga0glESIyXVV0gHtjJBwHfngb5Ob0u0S4AAAAAWJLR0QB/wIt3gAAAAd0SU1FB+MGCw4mLYjaQ3YAAAJXSURBVFjDY2DACpiYWVjZsABWFmYmVJWMUIDdHAZ2DjZOLiyAk42DnSSDuFdz8WAT5+FdzU2iQXzYJfhJNkgAu4TAMDCInzphJLhaCLuE0GpBkgwSFhHFLiEqIkySQcSDQWyQmLgEF8VAQlyMQVJqNRvFYLWUJIP0ahlZOQqBrPxqaQaF1TyUh5HiagWgQUqUG6RMLYOURg2in0GQWFOh3CBVoEGsq9UoN0h9NSuDxmpNLUoN0tJercGgo7taT58ygwwMV+vqMDAZGa82MSU/nBjNzC1WGxuBWgTCllZs1ja2duQYY2fv4MhmZSkMKSGdnF1cVyu4uXt4kmaKpxePt8JqH19nJ0RR6+disXq1f0CgbBCxpgSHhIaFr14dERnlhVpmG0QbxqxeHRvnHp8gR9ApiUlaySmrgVanpsHLbGaldKh0fEamHtvq1SZZYdk5SSFMOAwRy83LF5f3B5qiXVBYBE1HiUrMDKtX5yNUMSdHCxUD1SgUlIiXKpaVV3CzV0JKU890wdw8larqqJraOqACk/oGh0ZIrIFA0+rVDFZoeY27urmllWs1CLS1d3R2dffEgYBDr0BffwRYuM53QrdIKDz6IUWtFdZMmztRbVLvZN3+KatRgIlEytRpPdNnzET2NuGidtbsOe5z581fAAULF5U2leXJYigbpOURQYM8VBbnLoGC3KUUGLRMr78+FgYWUmCQOnKkLafAoKAV3HCwxGswBPaoQaMGjRpElfaRCtAgq9XdTJQa5NENrEUEWF1XUtqnWeXKKsAg2KNAcZ+GVaFHEABoAe9e60DFqAAAAABJRU5ErkJggg==" />
+                    </svg>
+                    <h6 class="features__title">Ready to Ship</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+                <!-- Download for Free  -->
+                <div class="features__item">
+                    <svg class="features__icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="79px" height="60px">
+                        <image  x="0px" y="0px" width="79px" height="60px"  xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <h6 class="features__title">Download for Free</h6>
+                    <p class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+            </div> <!-- / .features__inner -->
+        </div>
+    </section> <!-- /.feature -->
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="works">
+        <div class="portfolio__item">
+            <img src="img/portfolio/1.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/2.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/3.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/4.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/5.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/6.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/7.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="img/portfolio/8.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content">
+                <h6 class="portfolio__title">Project Name</h6>
+                <p class="portfolio__sub-title">User Interface Design</p>
+            </div>
+        </div>
+    </section> <!-- /.portfolio -->
+
+    <!-- Team -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__item">
+                    <img src="img/team/01.jpg" alt="" class="team__img">
+                    <h5 class="team__name">Ruth Woods</h5>
+                    <p class="team__prof">Founder, CEO</p>
+                    <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="social team__social">
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedIn"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/02.jpg" alt="" class="team__img">
+                    <h5 class="team__name">Timothy Reed</h5>
+                    <p class="team__prof">Co-Founder, Developer</p>
+                    <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="social team__social">
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedIn"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/03.jpg" alt="" class="team__img">
+                    <h5 class="team__name">Victoria Valdez</h5>
+                    <p class="team__prof">UI Designer</p>
+                    <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="social team__social">
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedIn"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/04.jpg" alt="" class="team__img">
+                    <h5 class="team__name">Beverly Little</h5>
+                    <p class="team__prof">Data Scientist</p>
+                    <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                    <div class="social team__social">
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedIn"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- /.team__inner-->
+        </div>
+    </section> <!-- /.team -->
+
+    <!-- Clients -->
+    <section class="clients" id="clients">
+
+            <div class="clients__slider" id="clientsSlider">
+                <div class="slick-item">
+                    <div class="clients__item">
+                        <div class="clients__photo">
+                            <img src="img/slider/slider-1.jpg" alt="" class="clients__img">
+                        </div>
+                        <div class="clients__content">
+                            <h3 class="clients__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                            <p class="clients__autor">Susan Sims, Interaction Designer at XYZ</p>
+                        </div>
+                    </div>
+                </div>  
+                <div>
+                    <div class="clients__item">
+                        <div class="clients__photo">
+                            <img src="img/slider/slider-1.jpg" alt="" class="clients__img">
+                        </div>
+                        <div class="clients__content">
+                            <h3 class="clients__text"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt libero atque laudantium accusamus."</h3>
+                            <p class="clients__autor">Susan Sims, Interaction Designer at XYZ</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> <!-- /.clients__slider-->
+    </section> <!-- /.Clients -->
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="container">
+                <h4 class="download__title">Are You Ready to Start? Download Now For Free!</h4>
+                <p class="download__sub-title">Fusce dapibus, tellus ac cursus commodo</p>
+                <a href="#" class="btn btn_md">Download Here</a>
+        </div>
+    </section><!-- /.download -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__block">
+                    <h6 class="footer__title">Location</h6>
+                    <address class="footer__address">
+                        <p>3481 Melrose Place</p>
+                        <p>Beverly Hills, CA 90210</p>
+                    </address>
+                </div>
+                <div class="footer__block">
+                    <h6 class="footer__title">Share with Love</h6>
+                    <div class="social footer__social">
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedIn"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <h6 class="footer__title">About ActiveBox</h6>
+                    <p class="footer__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+
+            </div> <!-- /.footer__inner-->
+        </div> <!-- /.container-->
+
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright © 2015 ActiveBox. All Rights Reserved</p>
+                <p>Made by <span>Kamal Chaneman</span></p>
+            </div>
+        </div>
+    </footer> <!-- /.footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
